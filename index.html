@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1px" width="500px">
+        <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Unit Prize</th>
+            <th>Prize</th>
+        </tr>
+        <tr>
+            <td>Bat</td>
+            <td><input type="number" id="bat" value="0" onmouseleave="bills()"></td>
+            <td value="" id="bat-unit">1000</td>
+            <td value="" id="bat-prize"></td>
+        </tr>
+        <tr>
+            <td>Ball</td>
+            <td><input type="number" id="ball" value="0" onmouseleave="bills()"></td>
+            <td value="" id="ball-unit">60</td>
+            <td value="" id="ball-prize"></td>
+        </tr>
+        <tr>
+            <td>Stump</td>
+            <td><input type="number" id="stump" value="0" onmouseleave="bills()"></td>
+            <td value="" id="stump-unit">50</td>
+            <td value="" id="stump-prize"></td>
+        </tr>
+        <tr>
+            <td colspan="3">Total</td>
+            <td id="total"></td>
+        </tr>
+        <tr>
+            <td colspan="3">Tax 18%</td>
+            <td id="tax"></td>
+        </tr>
+        <tr>
+            <td colspan="3">Grand Total</td>
+            <td id="grand-total"></td>
+        </tr>
+
+
+
+    </table>
+    <script src="bill.js"></script>
+</body>
+
+</html>
